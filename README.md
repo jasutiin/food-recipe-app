@@ -1,10 +1,10 @@
 <div align="center">
-  <h2>Mealbook App</h2>
+  <h2>Food Recipe App</h2>
   <p>A simple app which has a list of your favourite meals and how to make them!</p>
 </div>
 
 <p align="center">
-  <img src="https://github.com/jasutiin/mealbook-app/blob/main/assets/images/app_preview.gif" alt="screenshot" width="200">
+  <img src="https://github.com/jasutiin/food-recipe-app/blob/main/assets/images/app_preview.gif" alt="screenshot" width="200">
 </p>
 
 <div align="center">
@@ -20,7 +20,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/jasutiin/mealbook-app
+$ git clone https://github.com/jasutiin/food-recipe-app
 
 # Install dependencies
 $ npm install
