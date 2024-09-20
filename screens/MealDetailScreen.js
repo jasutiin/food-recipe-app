@@ -8,6 +8,7 @@ import Subtitle from '../components/MealDetail/Subtitle';
 import List from '../components/MealDetail/List';
 import IconButton from '../components/IconButton';
 import { FavoritesContext } from '../store/context/favorites-context';
+import { COLORS } from '../constants';
 
 function MealDetailScreen({ route, navigation }) {
   const favoriteMealsCtx = useContext(FavoritesContext);
@@ -75,19 +76,19 @@ const styles = StyleSheet.create({
     fontSize: 24,
     margin: 8,
     textAlign: 'center',
-    color: 'white',
+    color: COLORS.primary500,
   },
   detailText: {
-    color: 'white',
+    color: COLORS.primary500,
   },
   subtitle: {
-    color: '#e2b497',
+    color: COLORS.accent500,
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
   },
   subtitleContainer: {
-    borderBottomColor: '#e2b497',
+    borderBottomColor: COLORS.accent500,
     borderBottomWidth: 2,
     padding: 6,
     marginHorizontal: 12,

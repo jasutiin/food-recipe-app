@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -10,6 +10,7 @@ import MealDetailScreen from './screens/MealDetailScreen';
 import FavoritesScreen from './screens/FavoritesScreen';
 import { Ionicons } from '@expo/vector-icons';
 import FavoritesContextProvider from './store/context/favorites-context';
+import { COLORS } from './constants';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -18,13 +19,13 @@ function DrawerNavigator() {
   return (
     <Drawer.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: '#351401' },
+        headerStyle: { backgroundColor: COLORS.primary500 },
         headerTintColor: 'white',
-        sceneContainerStyle: { backgroundColor: '#3f2f25' },
-        drawerContentStyle: { backgroundColor: '#351401' },
+        sceneContainerStyle: { backgroundColor: COLORS.primary300 },
+        drawerContentStyle: { backgroundColor: COLORS.primary500 },
         drawerInactiveTintColor: 'white',
-        drawerActiveTintColor: '#351401',
-        drawerActiveBackgroundColor: '#e4baa1',
+        drawerActiveTintColor: COLORS.primary500,
+        drawerActiveBackgroundColor: COLORS.accent500,
       }}
     >
       <Drawer.Screen
@@ -58,9 +59,9 @@ export default function App() {
         <NavigationContainer>
           <Stack.Navigator
             screenOptions={{
-              headerStyle: { backgroundColor: '#351401' },
+              headerStyle: { backgroundColor: COLORS.primary500 },
               headerTintColor: 'white',
-              contentStyle: { backgroundColor: '#3f2f25' },
+              contentStyle: { backgroundColor: COLORS.primary300 },
             }}
           >
             <Stack.Screen
@@ -87,5 +88,3 @@ export default function App() {
     </>
   );
 }
-
-const styles = StyleSheet.create({});

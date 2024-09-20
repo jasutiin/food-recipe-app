@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
+import { COLORS } from '../../constants';
 
 function List({ data }) {
   return data.map((dataPoint) => (
@@ -15,10 +16,10 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
     marginVertical: 4,
     marginHorizontal: 12,
-    backgroundColor: '#e2b497',
+    backgroundColor: COLORS.accent500,
   },
   itemText: {
-    color: '#351401',
+    color: COLORS.primary500,
     textAlign: 'center',
   },
 });
