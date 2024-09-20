@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
-  <img src="https://github.com/jasutiin/food-recipe-app/blob/main/assets/images/app_preview.gif" alt="screenshot" width="200">
+  <img src="https://github.com/jasutiin/food-recipe-app/blob/main/assets/app_preview.gif" alt="screenshot" width="200">
 </p>
 
 <div align="center">
